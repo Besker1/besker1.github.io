@@ -83,21 +83,20 @@ function makeContactList() {
         }
     },
     printAllContactNames: function(){
-        // make a new array
-        // make a for loop
-        // make an if statement
-        let newArray = [];
-        for( let i = 0; i < contacts.length; i++){
-        console.log(contacts[i].fullName)
-    
-}
+          //push all contacts' names into storage
+          var storage = [];
+          for(var k = 0; k <= contacts.length -1; k++){
+              storage.push(contacts[k].nameFirst + ' ' + contacts[k].nameLast)
+          }
+          //join them into a string joined with a new line \n
+         return storage.join('\n');
+      }
 
     }
     
     
-    };    
+    }
    
-}
 
 
 
