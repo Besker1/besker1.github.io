@@ -71,4 +71,71 @@ var a=10; a/=2;
 	var a=10; a%=2;
 	//Now a = 0
 	
-	
+/*Bitwise operators
+A bitwise operator treats their operands as a 
+set of 32 bits (zeros and ones), rather than as decimal, hexadecimal, or octal numbers.
+For example, the decimal number nine has a binary representation of 1001.
+Bitwise operators perform their operations on such binary representations, 
+but they return standard JavaScript numerical values.
+*/
+
+/*The list of operators:
+
+AND ( & )
+OR ( | )
+XOR ( ^ )
+NOT ( ~ )
+LEFT SHIFT ( << )
+RIGHT SHIFT ( >> )
+ZERO-FILL RIGHT SHIFT ( >>> )
+
+
+Logical Operators :
+There are various Logical Operators in JavaScript –
+
+&& (Logical AND) :
+It checks whether two operands are non-zero 
+(0, false, undefined, null or “” are considered as zero), if yes then return 1 otherwise 0.
+Example :
+*/
+let y = 5;
+let x = 6;
+
+if(x === 5 && y === 6){
+	console.log('Hey')
+}           else{
+	console.log('pi')
+}
+
+
+/*|| (Logical OR) :
+It checks whether any one of the two operands is non-zero 
+(0, false, undefined, null or “” is considered as zero). Thus || returns true 
+if either operand is true and if both are false it returns false.
+Example :
+*/
+
+if(x === 5 || y === 6){
+	console.log('Hey')
+}           else{
+	console.log('pi')
+}
+             
+/*! (Logical NOT) :
+It reverses the boolean result of the operand (or condition).
+Example :*/
+
+if(x !== 2 || y !== 4){
+	console.log('Hey');
+}           else{
+	console.log('pi');
+}    
+
+// Ternary operators are usually used as a short if and else statement
+
+// for example:
+
+ x === y ? console.log('hey'): console.log("hi");
+ 
+ 
+ 

@@ -20,6 +20,7 @@ Undefined	represents undefined value
 Null	represents null i.e. no value at all
 
 */
+
 var length = 16;                               // Number
 var lastName = "Johnson";                      // String
 var x = {firstName:"John", lastName:"Doe"};    // Object
@@ -36,9 +37,45 @@ var z = 6;
 console.log(x === y);       // Returns true
 console.log(x ===z);       // Returns false
 
-
+// primitive datatypes can be copied value
+// for example
+ let k = 5;
+ let j = k;  // j is copied by value whuch means it can j is based on what k is equal to
+ // even if k value changed afterward it will not change the current value of j.
 
 /* The complex datatypes
 Object	represents instance through which we can access members
 Array	represents group of similar values
 */
+
+
+// arrays 
+let o = [["a","h"], "a", "u"];
+
+let e = o;
+
+// arrays are copied by reference which means if anything change in array o even after it's being assigned to e
+// the value of e would also be chaged.
+
+o.push(a);
+
+console.log(e);
+
+
+// objects 
+// objects are also copied by reference
+
+let object = {
+ k: "alo",
+ i: "kiki"
+};
+
+let newObject = object;
+
+
+// copying by reference
+
+object.k = '';
+
+console.log(newObject);
+

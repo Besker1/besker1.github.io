@@ -1,4 +1,4 @@
-*
+/*
 * VARIABLES:
 *
 * 0. To hold things in memory during the life-cycle of a program, we can use variables.  Variables
@@ -34,3 +34,42 @@ var myVariable = 1;
 var myVariable = true;
 
 myVariable = "someString";
+
+// the var variable is function blocked which means once declare inside of a function scope
+// it can't be used outside of that scope
+// the var variable get hoisted. means the dclartion get hoisted to the top after the hoited function declaration
+// since function get hoisted first.
+
+// there is also the let and const variables, similar to the var variable they declare and initialise datatypes
+// let is not hoisted as the varibale variable, it's code blocked and reassignable. 
+
+// but const on the other hand can't be reassigned, it is code blocekd just like the let variable and can't be hoisted
+
+// examples:
+
+let aliana = " female";
+
+//reassign Aliana
+aliana = " Cute";
+
+console.log(aliana); // cute
+
+// code blocked example
+
+let liliP = function(str){
+    let nana = "life";
+    return str;
+}
+console.log(nana); // error
+
+for(let i = 0; i < 0; i++){
+    let john = "male";
+}
+console.log(john);//  error
+// const examples
+const nana = "female";
+
+nana = "male";
+
+console.log(nana);// error
+

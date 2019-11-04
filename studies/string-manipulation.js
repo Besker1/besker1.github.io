@@ -9,33 +9,48 @@ developers with everything they need:
 
 concat() - Combines the text of two or more strings and returns a new string.
 
-indexOf() – Returns the starting index of a substring within another string. 
-A –1 is returned if no match is found.
-charAt() – Returns the character at the specified location.
+example:*/ let arr = ['a','b','b'];
+         let att = ['d','c','f'];
+         
+         console.log(arr.concat(att));
 
-lastIndexOf() - Returns the index within the string of the last occurrence 
+/*indexOf() – Returns the starting index of a substring within another string. 
+A –1 is returned if no match is found.
+
+example:*/ console.log("How are you?".indexOf("are"));
+
+/*charAt() – Returns the character at the specified location.
+
+example: */ console.log("How are you?".charAt(5));
+
+/*lastIndexOf() - Returns the index within the string of the last occurrence 
 of the specified value, or -1 if not found.
 
-match() - Used to match a regular expression against a string.
-
-substring() – A portion of a string is returned. A starting and ending location 
-are passed to this function.
-
-replace() – Used to find a match between a regular expression and a string,
- and to replace the matched substring with a new substring.
+example:*/ console.log("How are you?".lastIndexOf("o"));
  
-search() - Executes the search for a match of a regular expression. 
-If successful, search returns the index of the match inside the string.
- Otherwise, it returns -1.
- 
-slice() - Extracts a section of a string and returns a new string.
+/*slice() - Extracts a section of a string and returns a new string.
 
-split() - Splits a string into an array of strings by separating the string into substrings.
+example:*/ console.log("How are you?".slice(8, 11));
 
-length() – The length of the string is returned as the count of the number 
+/*split() - Splits a string into an array of strings by separating the string into substrings.
+
+example:*/ let originalString = "How are you?";
+
+// Split string by whitespace character
+let splitString = originalString.split(" ");
+
+console.log(splitString);
+
+/*length() – The length of the string is returned as the count of the number 
 of characters it contains.
-toLowerCase() – Converts the entire string to lower case.
 
-toUpperCase() – Converts the entire string to upper case.
+example:*/ console.log("How are you?".length);
 
-*/
+/*toLowerCase() – Converts the entire string to lower case.
+
+example:*/ console.log("How are you?".toLowerCase());
+
+/*toUpperCase() – Converts the entire string to upper case.
+
+example: */console.log("How are you?".toUpperCase());
+
