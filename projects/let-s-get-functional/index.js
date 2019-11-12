@@ -122,7 +122,7 @@ var friendsCount = function(array, name) {
   return count;
 };
 
-var topThreeTags = function(array) {
+let  topThreeTags = function(array) {
   //get array of tags
   let tags = _.pluck(array, "tags");
   tags = tags.join().split(",");
@@ -137,7 +137,7 @@ var topThreeTags = function(array) {
   });
   // subtract 1 from all values, remove keys with 0 value
   while (Object.keys(counter).length > 3){
-      for (var key in counter){
+      for (let key in counter){
           counter[key] -- ;
               if (counter[key] < 1){
                   delete counter[key];
