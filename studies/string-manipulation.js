@@ -9,28 +9,31 @@ developers with everything they need:
 
 concat() - Combines the text of two or more strings and returns a new string.
 
-example:*/ let arr = ['a','b','b'];
-         let att = ['d','c','f'];
+example:*/
          
-         console.log(arr.concat(att));
+         let string = "Aliana";
+         let newString = "Cherie";
+         let strings = string.concat(" ", newString);
+         console.log(strings); // "Aliana Cherie"
+         
 
 /*indexOf() – Returns the starting index of a substring within another string. 
 A –1 is returned if no match is found.
 
-example:*/ console.log("How are you?".indexOf("are"));
+example:*/ console.log("How are you?".indexOf("are")); // 4
 
 /*charAt() – Returns the character at the specified location.
 
-example: */ console.log("How are you?".charAt(5));
+example: */ console.log("How are you?".charAt(5)); // 'r'
 
 /*lastIndexOf() - Returns the index within the string of the last occurrence 
 of the specified value, or -1 if not found.
 
-example:*/ console.log("How are you?".lastIndexOf("o"));
+example:*/ console.log("How are you?".lastIndexOf("o")); // 10
  
 /*slice() - Extracts a section of a string and returns a new string.
 
-example:*/ console.log("How are you?".slice(8, 11));
+example:*/ console.log("How are you?".slice(8, 11)); // 'you'
 
 /*split() - Splits a string into an array of strings by separating the string into substrings.
 
@@ -39,18 +42,36 @@ example:*/ let originalString = "How are you?";
 // Split string by whitespace character
 let splitString = originalString.split(" ");
 
-console.log(splitString);
+console.log(splitString); // ["How", "are", "you"]
 
 /*length() – The length of the string is returned as the count of the number 
 of characters it contains.
 
-example:*/ console.log("How are you?".length);
+example:*/ console.log("How are you?".length); // 3
 
 /*toLowerCase() – Converts the entire string to lower case.
 
-example:*/ console.log("How are you?".toLowerCase());
+example:*/ console.log("How are you?".toLowerCase());// "how are you?"
 
 /*toUpperCase() – Converts the entire string to upper case.
 
-example: */console.log("How are you?".toUpperCase());
+example: */console.log("how are you?".toUpperCase()); // "HOW ARE YOU?"
+
+// using operators
+
+
+let pop = "popsicles";
+
+let newPop = "perfection";
+
+
+let popo = pop + newPop;
+
+console.log(popo); // "popdiclesperfection"
+
+let newPopo = popo +=  " " + pop;
+
+console.log(newPopo); // popsiclesperfection popsicles
+
+
 

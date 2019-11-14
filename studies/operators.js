@@ -35,7 +35,7 @@ var a=10; a--;
 //Now a = 9
 
 
-//comparison operator compares the two operands.
+//comparison operator compares the two operands and evaluate to a booleans 
 
 //==	Is equal to	
 10==20 // = false
@@ -134,8 +134,50 @@ if(x !== 2 || y !== 4){
 // Ternary operators are usually used as a short if and else statement
 
 // for example:
+// this example just showed how ternary operators, help reduce 
+// the amount of writing to one line of code. instead of the use 
+// of if and else statement.
 
  x === y ? console.log('hey'): console.log("hi");
  
  
+ // Unary operators.
  
+// A unary operation is an operation with only one operand.
+
+// delete
+// The delete operator deletes an object, an object's property, 
+// or an element at a specified index in an array. 
+
+// If the delete operator succeeds, it sets the property or element to undefined. 
+// The delete operator returns true if the operation is possible;
+// it returns false if the operation is not possible.
+
+let kik = [1,2,3,2];
+
+for(let i = 0; i < kik.length; i++){
+	if(kik[i]===1){
+		delete kik[i];
+	}
+	console.log(kik); // [<empty>, 2,3,2]
+}
+
+// typeof
+
+// The typeof operator returns a string indicating the type of the unevaluated operand. 
+// operand is the string, variable, keyword, or object for which the type is to be returned.
+// The parentheses are optional.
+
+console.log(typeof kik); // array
+let kiki = " ";
+console.log(typeof kiki); // string
+let kiki1 = 1;
+console.log(typeof kiki1); // number
+
+// Void
+
+// The void operator specifies an expression to be evaluated without returning a value.
+// expression is a JavaScript expression to evaluate. The parentheses surrounding the expression are optional, but it is good style to use them.
+
+// You can use the void operator to specify an expression as a hypertext link. 
+// The expression is evaluated but is not loaded in place of the current document.

@@ -11,19 +11,24 @@ for-in loop
 */
 
 // for Loop example
-// loops over arrays 
+// for loops itirate over arrays 
 // take starting condition let i = 0; a stopping condition i< array length/numb
 // an increment or decrement
-for (let i=1; i<=5; i++)  {
+for (let i=0; i<=5; i++)  {
     console.log(i);
 }
 
-
+// can also loop backward over an array 
+let array = ["a", "n", "d"];
+for(let i = array.length-1; i >= 0; i-- ){
+   console.log(array[i]);
+    
+}
 // while loop example
 // take starting condition let i = 11 || whatever the condition is ;
 //a stopping condition i< array length/numb
 // an increment ++ or decrement --
-let i =11;  
+let i = 11;  
 while (i<=15)  
 {  
 console.log(i);  
@@ -40,7 +45,7 @@ i++;
 
 
 // the for key in loop
-// 'the for key in loop' loops over objects 
+// 'the fo in loops" itirate over objects 
 // example:
 let objects = {
     i : "lady",

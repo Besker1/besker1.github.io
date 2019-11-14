@@ -37,11 +37,11 @@ myVariable = "someString";
 
 // the var variable is function blocked which means once declare inside of a function scope
 // it can't be used outside of that scope
-// the var variable get hoisted. means the dclartion get hoisted to the top after the hoited function declaration
+// the var variable get hoisted. means the declaration get hoisted to the top after the hoisted function declaration
 // since function get hoisted first.
 
 // there is also the let and const variables, similar to the var variable they declare and initialise datatypes
-// let is not hoisted as the varibale variable, it's code blocked and reassignable. 
+// let is not hoisted as the variable var, it's code blocked and reassignable. 
 
 // but const on the other hand can't be reassigned, it is code blocekd just like the let variable and can't be hoisted
 
@@ -72,4 +72,31 @@ const nana = "female";
 nana = "male";
 
 console.log(nana);// error
+
+// hoisting 
+
+/*Hoisting is JavaScript's default behavior of moving all declarations to the top 
+of the current scope (to the top of the current script or the current function).
+JavaScript only hoists declarations, not initializations.
+functions have hoisting priority over var, and it is hoisted with its body.
+let and const are not hoisted.
+Examples:
+*/
+
+var cut = "a";
+
+function pop(a){
+    return a;
+}
+
+// when hoisting
+//  the javascript interpreter read it like this.
+
+function pop(a){        // the function comes first since it has precedence over var 
+    return a ;
+}                       
+
+var cut; // declaration 
+
+cut = "a"; // the initialization
 

@@ -17,10 +17,10 @@ func(argument)
  the argument is the value that replace the parameters.
 */
 
-function Func(d,c){
+function func(d,c){
   return d + c
 }
-var newVar = Func(1,2);
+var newVar = func(1,2);
 
 //console.log(newVar)
 
