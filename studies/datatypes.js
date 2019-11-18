@@ -7,44 +7,32 @@ JavaScript is a dynamic type language,
  it is dynamically used by JavaScript engine. You need to use var here to specify the data type. 
  It can hold any type of values such as numbers, strings etc.
  For example:
- */
+ */ 
 var a = 40; // a number 
 var b = 'Aliana' // a string 
 
-/* There are five types of primitive data types in JavaScript.
+// There are five types of primitive data types in JavaScript.
  
-String	represents sequence of characters surrounded by strings e.g. "hello"
-Number	represents numeric values e.g. 100
-Boolean	represents boolean value either false or true
-Undefined	represents undefined value
-Null	represents null i.e. no value at all
-
-*/
-
-var length = 16;                               // Number
-var lastName = "Johnson";                      // String
-var x = {firstName:"John", lastName:"Doe"};    // Object
-var x;           // Now x is undefined
-x = 5;           // Now x is a Number
-// numbers can be negative or evenc ontain a decimal.
-x = -5.5;          // number
-x = "John";      // Now x is a String
-
-//Booleans can only have two values: true or false.
-
-// null example:
-
- var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
-person = null;    // Now value is null, but type is still an object
-
-
-
+1. //String	represents sequence of characters surrounded by strings e.g. "hello"
+var lastName = "Johnson";
+2. //Number	represents numeric values e.g. 100
+var length = 16;               console.log(typeof length) // number
+let dec = 10.5;                console.log(typeof dec)   // number
+let neg = -2;                  console.log(typeof neg)  // number
+3. //Boolean	represents boolean value either false or true
 //Example
 var x = 5;
 var y = 5;
 var z = 6;
 console.log(x === y);       // Returns true
 console.log(x ===z);       // Returns false
+
+4. //Undefined	represents undefined value
+var x; console.log(x); // undefined
+5. // Null	represents null i.e. no value at all
+ var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+person = null;    // Now value is null, but type is still an object
+
 
 // primitive datatypes can be copied value
 // for example
@@ -62,16 +50,34 @@ Array	represents group of similar values
 // used to store multiple values in a single variable
 // can hold more than one value at a time.
 
-let o = [["a","h"], "a", "u"];
+let opp = [["a","h"], "a", "u"];
 
-let e = o;
 
+
+// array access 
+
+// arrays can be accessed using the bracket notation and the index  
+console.log(opp[0]); // ["a","h"]
+// or any array methods like push, pop, shift, unshift
+//use push to add some at the end of the array 
+opp.push("y"); // [["a","h"], "a", "u", "y"]
+//pop to remove the index at the end of the array
+opp.pop(); // [["a","h"], "a", "u"]
+//shift to remove the first index from the front of the array
+opp.shift(); // [ "a", "u"]
+//unshift to add at the 0 index
+opp.unshift(["a","h"]); // [["a","h"], "a", "u"]
+
+
+
+// 
 // arrays are copied by reference which means if anything change in array o even after it's being assigned to e
 // the value of e would also be chaged.
+let egg = opp;
 
-o.push(a);
+opp.push(a);
 
-console.log(e);
+console.log(egg);
 
 
 // objects 
@@ -84,8 +90,14 @@ let object = {
  i: "kiki"
 };
 
+// object access 
+//object can be accessed using bracket or dot notation
 
+let acc = object.k ; 
+console.log(acc); // 'alo'
 
+let brac = object['i']; 
+console.log(brac); 'kiki'
 // copying by reference
 
 let newObject = object;
@@ -156,5 +168,13 @@ There is also -Infinity which is mathematical negative infinity, and it's lower 
 To get -Infinity you negate Infinity, or get a reference to it in Number.NEGATIVE_INFINITY.
 
 - (Infinity); // -Infinity
+example:
 */
+let maxNumber = Math.pow(10, 1000); // max positive number
+
+if (maxNumber === Infinity) {
+  console.log("Let's call it Infinity!");// "Let's call it Infinity!"
+}
+
+console.log(1 / maxNumber);// 0
 

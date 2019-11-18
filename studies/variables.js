@@ -41,12 +41,13 @@ myVariable = "someString";
 // since function get hoisted first.
 
 // there is also the let and const variables, similar to the var variable they declare and initialise datatypes
-// let is not hoisted as the variable var, it's code blocked and reassignable. 
+// let is hoisted, but not accessable until initialization.
+//it's code blocked and reassignable. 
 
-// but const on the other hand can't be reassigned, it is code blocekd just like the let variable and can't be hoisted
+// but const on the other hand can't be reassigned, it is code blocekd just like the let variable is hoisted, but not accessable until initialization.
 
 // examples:
-
+console.log(aliana); // error  because it is not initialize yet.
 let aliana = " female";
 
 //reassign Aliana
@@ -79,7 +80,7 @@ console.log(nana);// error
 of the current scope (to the top of the current script or the current function).
 JavaScript only hoists declarations, not initializations.
 functions have hoisting priority over var, and it is hoisted with its body.
-let and const are not hoisted.
+let and const are hoisted, but not accessable until it is assigned.
 Examples:
 */
 

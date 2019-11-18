@@ -15,13 +15,13 @@ for-in loop
 // take starting condition let i = 0; a stopping condition i< array length/numb
 // an increment or decrement
 for (let i=0; i<=5; i++)  {
-    console.log(i);
+    console.log(i); // 1,2,3,4,5
 }
 
 // can also loop backward over an array 
 let array = ["a", "n", "d"];
 for(let i = array.length-1; i >= 0; i-- ){
-   console.log(array[i]);
+   console.log(array[i]); // "d", "n", "a"
     
 }
 // while loop example
@@ -31,7 +31,7 @@ for(let i = array.length-1; i >= 0; i-- ){
 let i = 11;  
 while (i<=15)  
 {  
-console.log(i);  
+console.log(i);  // 11,12,13,14,15
 i++;  
 }  
 
@@ -39,7 +39,7 @@ i++;
 // do while loop example
 var k =21;  
 do{  
-console.log(i);  
+console.log(i);  //21,24,25
 i++;  
 }while (i<=25);  
 

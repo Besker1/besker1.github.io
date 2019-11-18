@@ -44,10 +44,9 @@ let splitString = originalString.split(" ");
 
 console.log(splitString); // ["How", "are", "you"]
 
-/*length() – The length of the string is returned as the count of the number 
-of characters it contains.
+ // substring() method returns the part of the string between the start and end indexes, or to the end of the string.
 
-example:*/ console.log("How are you?".length); // 3
+console.log("How are you".substring(2,5)); // w a
 
 /*toLowerCase() – Converts the entire string to lower case.
 

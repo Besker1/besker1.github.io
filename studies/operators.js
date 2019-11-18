@@ -140,6 +140,8 @@ if(x !== 2 || y !== 4){
 
  x === y ? console.log('hey'): console.log("hi");
  
+ // if the statement before the interogation point is true, it'll console.log("hey")
+ // if false it'll console.log('hi')
  
  // Unary operators.
  
