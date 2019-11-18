@@ -13,8 +13,16 @@ var b = 'Aliana' // a string
 
 // There are five types of primitive data types in JavaScript.
  
-1. //String	represents sequence of characters surrounded by strings e.g. "hello"
+1. //String	represents sequence of characters surrounded by double or single quotes e.g. "hello" / 'hello'
 var lastName = "Johnson";
+// access strings 
+
+// we can access strings using the ChartAt() method
+// which Returns the character at the specified location.
+// or we can use the bracket notation 
+console.log(lastName.chartAt(2)); // 'h'
+console.log(lastName[0]); // 'J'
+
 2. //Number	represents numeric values e.g. 100
 var length = 16;               console.log(typeof length) // number
 let dec = 10.5;                console.log(typeof dec)   // number
